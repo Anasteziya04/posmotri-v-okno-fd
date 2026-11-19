@@ -64,7 +64,7 @@ ol {
   gap: 30px;
   margin-left: 30px;
   margin-right: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 160px;
 }
 
 .result {
@@ -73,7 +73,7 @@ ol {
 
 .result__video-container {
   width: 711px;
-  height: 386px;
+  height: 387px;
   margin-bottom: 16px;
 }
 
@@ -92,13 +92,12 @@ ol {
 .search-form__label:hover {
   text-decoration: underline 1px #fff;
   cursor: pointer;
+  text-underline-offset: 3px;
 }
 
 .search-form__label:has(.search-form__textfield):hover {
   text-decoration: none;
 }
-
-
 
 .search-form__label:has(:focus) {
   outline: none;
@@ -106,7 +105,6 @@ ol {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
-  padding: 1.5px;
 }
 
 .search-form__textfield::placeholder {
@@ -139,11 +137,9 @@ ol {
   appearance: none;
 }
 
-
 .search-form__textfield:focus {
   outline: none;
 }
-
 
 .search-form__textfield:active {
   outline: none;
@@ -179,6 +175,10 @@ ol {
   align-items: center;
   width: fit-content;
   gap: 1.5px;
+}
+
+.search-form__label-text {
+  margin-left: 5px;
 }
 
 .content__details {
@@ -227,12 +227,18 @@ ol {
   padding-right: 3px;
 }
 
-.content__card-link:hover {
+.content__video-card-title:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.content__video-card-description:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
-
 }
 
 .content__card-link:active {
@@ -244,7 +250,6 @@ ol {
   text-decoration: none;
   color: #fff;
 }
-
 
 .content__video-card {
   display: flex;
@@ -266,7 +271,7 @@ ol {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -338,6 +343,7 @@ ol {
 .button:hover {
   text-decoration: underline 1px solid #fff;
   cursor: pointer;
+  text-underline-offset: 3px;
 }
 
 .result__video-container,
