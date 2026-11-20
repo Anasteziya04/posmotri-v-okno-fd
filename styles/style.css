@@ -175,7 +175,7 @@ ol {
 }
 
 .button {
-  outline: 1px solid #fff;
+  border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
